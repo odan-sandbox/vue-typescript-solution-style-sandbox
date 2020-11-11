@@ -1,7 +1,7 @@
 {
   "name": "typescript-solution-style-sandbox",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "odan <odan3240@gmail.com>",
-  "license": "MIT"
+  "author": "odan",
+  "private": true,
+  "workspaces": ["packages/*"]
 }
