@@ -13,6 +13,9 @@ export default Vue.extend({
   name: "App",
   components: {
     HelloWorld
+  },
+  mounted() {
+    this.$myInjectedFunction("aaa");
   }
 });
 </script>
