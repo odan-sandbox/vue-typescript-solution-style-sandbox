@@ -9,6 +9,11 @@
 import Vue from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
 
+// ここが型エラーにならないので、Vuter は app-a の tsconfig の中身を見てなさそう
+// そもそも Vuter の内部で tsserver が内部で動いているわけではないので、solution style の tsconfig を書いても意味がないか
+// eslint-disable-next-line no-undef
+test.todo("a");
+
 export default Vue.extend({
   name: "App",
   components: {

@@ -3,9 +3,16 @@ import App from "./App.vue";
 
 Vue.config.productionTip = false;
 
+jest.fn();
 declare module "vue/types/vue" {
   interface Vue {
-    $myInjectedFunction(message: string): void
+    $myInjectedFunction(message: string): void;
+  }
+}
+
+declare module "vue/types/vue" {
+  interface Vue {
+    $myInjectedFunction(message: string): void;
   }
 }
 
